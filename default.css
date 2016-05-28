@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font: 16px/1.5 "Pontano Sans", sans-serif;
+  padding: 30px 40px;
+  color: #666;
+  max-width: 700px;
+}
+
+h1,
+h2 {
+  color: #000;
+  font-family: "Pontano Sans", sans-serif;
+}
+
+strong {
+  font-family: "Pontano Sans", sans-serif;
+}
+
+a {
+  color: #06c;
+  font-family: "Pontano Sans", sans-serif;
+}
+
+p {
+  margin: 12px 0;
+}
+
+ul {
+  font-size: 0.9rem;
+  margin-left: 1.5rem;
+}
