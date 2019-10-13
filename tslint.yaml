@@ -2,6 +2,7 @@
 defaultSeverity: error
 extends:
 - "tslint:recommended"
+- "tslint-react"
 - "tslint-config-prettier"
 linterOptions:
     exclude:
@@ -29,7 +30,7 @@ rules:
     prefer-method-signature: true
     prefer-readonly: true
     prefer-template: true
-    quotemark: [true, "single", "avoid-escape"]
+    quotemark: [true, "single", "avoid-escape", "jsx-double"]
     semicolon: [true, "always"]
     space-within-parens: true
     space-before-function-paren:
@@ -47,5 +48,6 @@ rules:
     - "check-format"
     - "ban-keywords"
     - "allow-leading-underscore"
+    - "allow-pascal-case"
     whitespace: [true, "check-module"]
 rulesDirectory: []
