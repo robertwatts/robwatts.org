@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
+import Head from '../components/head';
 import Layout from '../components/layout';
 
 interface Props {
@@ -9,18 +10,24 @@ interface Props {
 
 export default class MarkdownTemplate extends React.Component<Props> {
   public render() {
-    const { data } = this.props;
-    const { markdownRemark } = data; // data.markdownRemark holds our post data
-    const { frontmatter, html } = markdownRemark;
+    const content = this.props.data.markdownRemark;
+    const siteTitle = this.props.data.site.siteMetadata.title;
+
     return (
-      <Layout title={frontmatter.title}>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+      <Layout title={siteTitle}>
+        <Head title={content.frontmatter.title} />
+        <div dangerouslySetInnerHTML={{ __html: content.html }} />
       </Layout>
     );
   }
 }
 
 interface PageQueryData {
+  site: {
+    siteMetadata: {
+      title: string,
+    },
+  };
   markdownRemark: {
     html: string,
     frontmatter: {
@@ -32,6 +39,11 @@ interface PageQueryData {
 
 export const pageQuery = graphql`
   query($path: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
