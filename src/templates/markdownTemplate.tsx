@@ -11,10 +11,11 @@ interface Props {
 export default class MarkdownTemplate extends React.Component<Props> {
   public render() {
     const content = this.props.data.markdownRemark;
+    const pageTitle = this.props.data.markdownRemark.frontmatter.title;
     const siteTitle = this.props.data.site.siteMetadata.title;
 
     return (
-      <Layout title={siteTitle}>
+      <Layout siteTitle={siteTitle} pageTitle={pageTitle}>
         <Head title={content.frontmatter.title} />
         <div dangerouslySetInnerHTML={{ __html: content.html }} />
       </Layout>
