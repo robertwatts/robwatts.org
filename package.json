@@ -10,6 +10,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "lint": "tslint --project .",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
@@ -33,6 +34,7 @@
     "@types/react-dom": "^16.9.1",
     "@types/react-helmet": "^5.0.13",
     "@types/styled-components": "^4.1.19",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.18.2",
     "tslint": "^5.20.0",
     "tslint-config-prettier": "^1.18.0",
