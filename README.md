@@ -4,7 +4,19 @@ My professional website, built using Gatsby, Typescript + Markdown.
 
 I am not a front-end developer and this website testifies to that fact.
 
+## Content structure
+
 All page content is in src/markdown-pages.
+
+The website will follow a simple structure:
+
+- `/` - homepage (index.md)
+- `/work` - who I have worked for (work.md)
+- `/coach` - who I can help (coach.md)
+- `/articles` - content I have written (articles.md)
+- `/contact` - how to get in touch (contact.md)
+
+## Sources
 
 Tutorials that helped me pull this together:
 

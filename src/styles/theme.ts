@@ -8,7 +8,7 @@ export const theme = {
     background: '#fffff8',
     contrast: '#111',
     contrastLightest: '#dad9d9',
-    accent: 'red',
+    accent: 'blue',
     white: '#ffffff',
   },
 };
@@ -60,7 +60,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-left: 12.5%;
-  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
   background-color: white;
   color: #111;
   max-width: 1400px;
@@ -185,8 +184,7 @@ figure.fullwidth figcaption {
   margin-right: 24%;
 }
 
-a:link,
-a:visited {
+a:link {
   color: inherit;
 }
 

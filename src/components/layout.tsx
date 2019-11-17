@@ -12,11 +12,16 @@ const StyledNav = styled.nav`
 
   li {
     display: inline-block;
-    margin: 16px;
+    margin-top: 16px;
+    margin-right: 16px;
 
     a {
       background: none;
     }
+  }
+  .primary {
+    color: rgba(0, 0, 0, 0.70);
+    font-weight: 500;
   }
 `;
 
@@ -34,20 +39,20 @@ export default class extends React.Component<Props> {
         <GlobalStyle />
         <StyledNav className="navigation">
           <ul>
-            <li>
-              <Link to={`/`}>&</Link>
+            <li className="primary">
+              <Link to={`/`}>{this.props.siteTitle}</Link>
             </li>
             <li>
-              <Link to={`/tags`}>Tags</Link>
+              <Link to={`/experience`}>Experience</Link>
             </li>
             <li>
-              <Link to={`/about`}>About</Link>
+              <Link to={`/contact`}>Contact</Link>
             </li>
           </ul>
         </StyledNav>
 
         <header className="header">
-          <h1>{this.props.siteTitle} - {this.props.pageTitle}</h1>
+          <h1>{this.props.pageTitle}</h1>
         </header>
 
         <main className="content" role="main">
