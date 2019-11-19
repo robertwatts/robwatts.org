@@ -1,5 +1,7 @@
 # robwatts.org
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d4c47a9e-4bfd-45a5-a287-396fa7272621/deploy-status)](https://app.netlify.com/sites/zen-spence-e39215/deploys)
+
 My professional website, built using Gatsby, Typescript + Markdown.
 
 I am not a front-end developer and this website testifies to that fact.
@@ -11,9 +13,9 @@ All page content is in src/markdown-pages.
 The website will follow a simple structure:
 
 - `/` - homepage (index.md)
-- `/work` - who I have worked for (work.md)
-- `/coach` - who I can help (coach.md)
-- `/articles` - content I have written (articles.md)
+- `/experience` - who I have worked for (experince.md)
+- `/coach` - who I can help (coach.md) [TODO]
+- `/articles` - content I have written (articles.md) [TODO]
 - `/contact` - how to get in touch (contact.md)
 
 ## Sources
