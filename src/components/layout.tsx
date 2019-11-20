@@ -2,7 +2,7 @@ import React from 'react';
 
 import Nav from './nav';
 
-import { GlobalStyle, styled } from '../styles/theme';
+import { GlobalStyle } from '../styles/theme';
 
 interface Props {
   readonly siteTitle: string;
