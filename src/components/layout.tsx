@@ -1,29 +1,8 @@
-import { Link } from 'gatsby';
 import React from 'react';
 
-import { GlobalStyle, styled } from '../styles/theme';
+import Nav from './nav';
 
-const StyledNav = styled.nav`
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin-top: 16px;
-    margin-right: 16px;
-
-    a {
-      background: none;
-    }
-  }
-  .primary {
-    color: rgba(0, 0, 0, 0.70);
-    font-weight: 500;
-  }
-`;
+import { GlobalStyle } from '../styles/theme';
 
 interface Props {
   readonly siteTitle: string;
@@ -31,25 +10,14 @@ interface Props {
 }
 
 export default class extends React.Component<Props> {
+
   public render() {
     const { children } = this.props;
 
     return (
       <>
         <GlobalStyle />
-        <StyledNav className="navigation">
-          <ul>
-            <li className="primary">
-              <Link to={`/`}>{this.props.siteTitle}</Link>
-            </li>
-            <li>
-              <Link to={`/experience`}>Experience</Link>
-            </li>
-            <li>
-              <Link to={`/contact`}>Contact</Link>
-            </li>
-          </ul>
-        </StyledNav>
+        <Nav />
 
         <header className="header">
           <h1>{this.props.pageTitle}</h1>

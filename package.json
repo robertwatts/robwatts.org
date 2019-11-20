@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "robwatts.org",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Professional website for Robert Watts",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
