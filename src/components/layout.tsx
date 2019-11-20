@@ -29,9 +29,11 @@ export default class extends React.Component<Props> {
 
         <footer className="footer">
           © {new Date().getFullYear()},{` `}
-          <a href="https://robwatts.org">robwatts.org</a>. Built with
+          <a href="https://www.robwatts.org">robwatts.org</a>. Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org">Gatsby</a> and hosted on
+          {` `}
+          <a href="https://www.netlify.com">Netlify</a>
         </footer>
       </>
     );
