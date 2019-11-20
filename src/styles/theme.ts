@@ -4,12 +4,14 @@ export { css, styled };
 
 export const theme = {
   colors: {
-    black: '#000000',
-    background: '#fffff8',
+    black: '#111111',
+    background: '#ffffff',
     contrast: '#111',
     contrastLightest: '#dad9d9',
-    accent: 'blue',
     white: '#ffffff',
+    green: '#2ECC40',
+    yellow: '#FFDC00',
+    grey: '#AAAAAA',
   },
 };
 
@@ -34,8 +36,8 @@ body {
   color: rgba(0, 0, 0, 0.70);
 }
 
-a.anchor, a.anchor:hover, a.anchor:link {
-  background: none !important;
+a {
+  color: ${theme.colors.green}
 }
 
 figure {
