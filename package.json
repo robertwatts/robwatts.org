@@ -14,15 +14,15 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
-    "gatsby": "^2.15.36",
-    "gatsby-plugin-styled-components": "^3.1.14",
+    "gatsby": "^2.24.73",
+    "gatsby-plugin-styled-components": "^3.3.14",
     "gatsby-plugin-tslint": "^0.0.2",
-    "gatsby-plugin-typescript": "^2.1.12",
-    "gatsby-plugin-typography": "^2.3.17",
-    "gatsby-source-filesystem": "^2.1.31",
-    "gatsby-transformer-remark": "^2.6.28",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "gatsby-plugin-typescript": "^2.4.21",
+    "gatsby-plugin-typography": "^2.5.13",
+    "gatsby-source-filesystem": "^2.3.34",
+    "gatsby-transformer-remark": "^2.8.38",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
     "styled-components": "^4.4.0",
@@ -30,17 +30,17 @@
     "typography-theme-st-annes": "^0.16.19"
   },
   "devDependencies": {
-    "@types/react": "^16.9.5",
-    "@types/react-dom": "^16.9.1",
-    "@types/react-helmet": "^5.0.13",
-    "@types/styled-components": "^4.1.19",
+    "@types/react": "^16.9.52",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-helmet": "^5.0.16",
+    "@types/styled-components": "^4.4.3",
     "prettier": "^1.18.2",
     "tslint": "^5.20.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-loader": "^3.5.4",
-    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-plugin-prettier": "^2.3.0",
     "tslint-react": "^4.1.0",
-    "typescript": "^3.6.4"
+    "typescript": "^3.9.7"
   },
   "repository": {
     "type": "git",
